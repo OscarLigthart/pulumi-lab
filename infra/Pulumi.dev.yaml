@@ -1,3 +1,4 @@
+encryptionsalt: v1:CNPzy/m73SI=:v1:WNiaVAalp+PhTt7e:p8gCMShCG8RO7PUAZufR8oAMzwGknw==
 config:
   gcp:project: sp-pulumi-lab
   lab:location: europe-west1
