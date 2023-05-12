@@ -9,7 +9,6 @@ CLOUD_STORAGE_BUCKET = os.environ['CLOUD_STORAGE_BUCKET']
 def index(path):
     gcs = storage.Client()
     bucket = gcs.get_bucket(CLOUD_STORAGE_BUCKET)
-    print(CLOUD_STORAGE_BUCKET)
     try:
         blob = bucket.get_blob(path)
         content = blob.download_as_string()
