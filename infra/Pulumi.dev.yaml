@@ -1,0 +1,5 @@
+config:
+  gcp:project: sp-pulumi-lab
+  lab:location: europe-west1
+  lab:project: sp-pulumi-lab
+  lab:site: ../src/home.html

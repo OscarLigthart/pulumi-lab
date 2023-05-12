@@ -10,6 +10,7 @@ def index(path):
     print(path)
     gcs = storage.Client()
     bucket = gcs.get_bucket(CLOUD_STORAGE_BUCKET)
+    print(CLOUD_STORAGE_BUCKET)
     try:
         blob = bucket.get_blob(path)
         content = blob.download_as_string()
