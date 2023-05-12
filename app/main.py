@@ -7,7 +7,6 @@ app = Flask(__name__)
 CLOUD_STORAGE_BUCKET = os.environ['CLOUD_STORAGE_BUCKET']
 @app.route('/', defaults={'path': 'index.html'})
 def index(path):
-    print(path)
     gcs = storage.Client()
     bucket = gcs.get_bucket(CLOUD_STORAGE_BUCKET)
     print(CLOUD_STORAGE_BUCKET)
