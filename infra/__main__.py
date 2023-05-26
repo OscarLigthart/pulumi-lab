@@ -27,6 +27,7 @@ image = docker.Image(
     image_name=f"gcr.io/{project}/site",
     build=docker.DockerBuildArgs(
         context="../app",
+        platform="linux/amd64"
     ),
 )
 
